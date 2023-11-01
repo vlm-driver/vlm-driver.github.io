@@ -1,2 +1,2 @@
-VisIT-Bench Website
+VLM-Driver Website
 http://visit-bench.github.io/
