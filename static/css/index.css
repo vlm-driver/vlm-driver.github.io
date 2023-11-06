@@ -146,8 +146,9 @@ body {
 .publication-flipped {
     position: relative;
     /*width: 100%;*/
+    margin: auto;
     width: 900px;
-    height: 500px;
+    height: 0;
     padding-bottom: 45%;
     /*overflow: hidden;*/
     border-radius: 10px !important;
