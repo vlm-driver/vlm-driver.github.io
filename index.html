@@ -180,7 +180,7 @@
     <div class="publication-flipped">
         <div class="content has-text-justified">
             <h3 class="subtitle is-size-3-tablet has-text-left pb-3">
-               <p align="center", style="margin-top: -20px; margin-bottom: -20px; font-size: 40px;">
+               <p align="center", style="margin-top: -40px; margin-bottom: -20px; font-size: 40px;">
                    <br>
                     Abstract<br>
                </p>
@@ -444,30 +444,29 @@ Moreover, <em><b>Dolphins</b></em>'s in-context learning ability, reflection and
 
         <div class="item">
          <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
-           Planning
+            Rapid Learning and Adaptation
            </h2>
          <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
          <p>
-             An example showcasing <em><b>Dolphins</b></em>’s capability in scenario understanding. The video features an ego car driving in a tunnel. <em><b>Dolphins</b></em> can identify the environment in which the ego car is situated and accurately determine the color of the front vehicle as well as infer the current time.
+            Three examples show our model enables rapid adaptation to unseen instructions through <b>in-context learning</b>. In the first two examples, <em><b>Dolphins</b></em> learns to play the role of the driver through in-context examples and can accurately describe its behavior, despite not having been trained on such instructions. The third example shows that <em><b>Dolphins</b></em> can learn common sense from in-context examples, such as not being able to judge the current time based on the light when inside a tunnel.
          </p>
          <p style="text-align:center;">
            <br><br>
-           <img src="static/images/planning/16.png"  style="width: 100%; height: 100%"/>
+           <img src="static/images/in_context_learning/7.png"  style="width: 100%; height: 100%"/>
          </p>
          </h3>
       </div>
 
       <div class="item">
          <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
-           Planning
+            Rapid Learning and Adaptation
            </h2>
          <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
          <p>
-             An example showcasing <em><b>Dolphins</b></em>’s capability in scenario understanding. The video features an ego car driving on a snowy street. <em><b>Dolphins</b></em> can identify the environment in which the ego car is situated, the presence of the traffic light, and accurately determine the color of the passing vehicle.
-         </p>
+             An example showcasing <em><b>Dolphins</b></em>'s capability in <b>prediction</b> through <b>in-context learning</b>. <em><b>Dolphins</b></em> can reason for future events that have not yet happened. Through in-context examples, our model can learn to answer "What If"-style questions, to imagine the behavior of the ego car in the future by language.
          <p style="text-align:center;">
            <br><br>
-           <img src="static/images/planning/17.png"  style="width: 100%; height: 100%"/>
+           <img src="static/images/in_context_learning/12.png"  style="width: 100%; height: 100%"/>
          </p>
          </h3>
       </div>
@@ -485,17 +484,32 @@ Moreover, <em><b>Dolphins</b></em>'s in-context learning ability, reflection and
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
 
-         <div class="item">
+      <div class="item">
          <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
-           Rapid Learning and Adaptation (In-context Learning)
+           Reflection and Error Recovering
            </h2>
          <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
          <p>
-            three examples show our model enables rapid adaptation to unseen instructions through in-context learning. In the first two examples, <em><b>Dolphins</b></em> learns to play the role of the driver through in-context examples and can accurately describe its behavior, despite not having been trained on such instructions. The third example shows that <em><b>Dolphins</b></em> can learn common sense from in-context examples, such as not being able to judge the current time based on the light when inside a tunnel.
+            An example showcasing <em><b>Dolphins</b></em>'s capability in <b>reflection</b>. The video features an ego car driving down a snow-covered city street. The black vehicle in front of the ego car appears to want to change to the left lane, which would be positioned on the ego car's trajectory. Initially, <em><b>Dolphins</b></em> plans for the ego car to slow down and let the black car turn left. However, after being provided with information about the 'straight has the right of way' traffic rule, <em><b>Dolphins</b></em> reflects and revises the driving plan.
          </p>
          <p style="text-align:center;">
            <br><br>
-           <img src="static/images/perception/7.png"  style="width: 100%; height: 100%"/>
+           <img src="static/images/reflection/22.png"  style="width: 100%; height: 100%"/>
+         </p>
+         </h3>
+      </div>
+
+      <div class="item">
+         <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+           Reflection and Error Recovering
+           </h2>
+         <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
+         <p>
+            An example showcasing <em><b>Dolphins</b></em>'s capability in <b>reflection</b>. The video shows an ego car driving through an interaction with a white car coming from the opposite direction. Initially, <em><b>Dolphins</b></em> plans for the ego car to slow down and let the white car proceed. However, after being provided with information about the human driver decision, <em><b>Dolphins</b></em> reflects and revises the driving plan.
+         </p>
+         <p style="text-align:center;">
+           <br><br>
+           <img src="static/images/reflection/23.png"  style="width: 100%; height: 100%"/>
          </p>
          </h3>
       </div>
@@ -505,6 +519,79 @@ Moreover, <em><b>Dolphins</b></em>'s in-context learning ability, reflection and
 </div>
 </section>
 <!-- End image carouse4 -->
+
+
+<!-- Image carouse5 -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+
+      <div class="item">
+         <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+            Interactive Conversation
+           </h2>
+         <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
+         <p>
+            An example showcasing <em><b>Dolphins</b></em>'s capability in <b>interactive conversation</b>. The video features an ego car stopping at an intersection on a rainy day. And <em><b>Dolphins</b></em> can answer various questions in terms of the weather, the traffic lights, and how they affect driving.
+         </p>
+         <p style="text-align:center;">
+           <br><br>
+           <img src="static/images/conversation/8.png"  style="width: 100%; height: 100%"/>
+         </p>
+         </h3>
+      </div>
+
+      <div class="item">
+         <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+            Interactive Conversation
+           </h2>
+         <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
+         <p>
+            An example showcasing <em><b>Dolphins</b></em>'s capability in <b>interactive conversation</b>. This video shows an ego car stopped at an intersection waiting for a red light and a pedestrian crossing a zebra crossing. We can ask <em><b>Dolphins</b></em> some questions about what it’s paying attention to at this intersection.
+         </p>
+         <p style="text-align:center;">
+           <br><br>
+           <img src="static/images/conversation/9.png"  style="width: 100%; height: 100%"/>
+         </p>
+         </h3>
+      </div>
+
+      <div class="item">
+         <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+            Interactive Conversation
+           </h2>
+         <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
+         <p>
+            An example showcasing <em><b>Dolphins</b></em>'s capability in <b>interactive conversation</b>. In this video, there are no traffic lights, so the ego car just needs to pay attention to the pedestrians.
+         </p>
+         <p style="text-align:center;">
+           <br><br>
+           <img src="static/images/conversation/10.png"  style="width: 100%; height: 100%"/>
+         </p>
+         </h3>
+      </div>
+
+      <div class="item">
+         <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+            Interactive Conversation
+           </h2>
+         <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
+         <p>
+            An example showcasing <em><b>Dolphins</b></em>'s capability in <b>interactive conversation</b>. This video shows an ego car driving behind a bicyclist. By conversing with <em><b>Dolphins</b></em>, we can learn how to drive safely when there are cyclists nearby. And our model can also create a tagline for this scene.
+         </p>
+         <p style="text-align:center;">
+           <br><br>
+           <img src="static/images/conversation/11.png"  style="width: 100%; height: 100%"/>
+         </p>
+         </h3>
+      </div>
+
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carouse5 -->
 
 
 
