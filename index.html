@@ -308,36 +308,52 @@ Moreover, <em><b>Dolphins</b></em>'s in-context learning ability, reflection and
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
 
-        <div class="item">
+      <div class="item">
          <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
-           Prediction
+           Prediction and Planning
            </h2>
          <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
          <p>
-             An example showcasing <em><b>Dolphins</b></em>’s capability in scenario understanding. The video features an ego car driving in a tunnel. <em><b>Dolphins</b></em> can identify the environment in which the ego car is situated and accurately determine the color of the front vehicle as well as infer the current time.
+             An example showcasing <em><b>Dolphins</b></em>'s capability in <b>prediction</b>. The video features an ego car driving on a snowy street. <em><b>Dolphins</b></em> can predict the trajectory of the white car passing by it. Since both the white car and the ego car are traveling in the same direction on a one-way road, the trajectories of both cars temporarily overlap.
          </p>
          <p style="text-align:center;">
            <br><br>
-           <img src="static/images/prediction/8.png"  style="width: 100%; height: 100%"/>
+           <img src="static/images/prediction_and_planning/13.png"  style="width: 100%; height: 100%"/>
          </p>
          </h3>
       </div>
 
       <div class="item">
          <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
-           Prediction
+           Prediction and Planning
            </h2>
          <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
          <p>
-             An example showcasing <em><b>Dolphins</b></em>’s capability in scenario understanding. The video features an ego car driving on a snowy street. <em><b>Dolphins</b></em> can identify the environment in which the ego car is situated, the presence of the traffic light, and accurately determine the color of the passing vehicle.
+             An example showcasing <em><b>Dolphins</b></em>'s capability in <b>prediction</b>. The video shows an ego car making a U-turn. <em><b>Dolphins</b></em> can predict the trajectory of the black car parked in front of it. Since the black car in front is currently parked on the side of the road, Our model predicts that the car will remain there in the future and will not be positioned in the ego car's trajectory of turning.
          </p>
          <p style="text-align:center;">
            <br><br>
-           <img src="static/images/prediction/9.png"  style="width: 100%; height: 100%"/>
+           <img src="static/images/prediction_and_planning/14.png"  style="width: 100%; height: 100%"/>
          </p>
          </h3>
       </div>
 
+      <div class="item">
+         <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+           Prediction and Planning
+           </h2>
+         <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
+         <p>
+             An example showcasing <em><b>Dolphins</b></em>'s capability in <b>planning</b>. <em><b>Dolphins</b></em> can also understand control signals and employ them to predict the speed and turn angle of the ego car next second. Additionally, We can try to have <em><b>Dolphins</b></em> make a plan for the ego car to assist the driver during driving. However, due to the lack of sufficient information, such as the map, driving destination, etc., the plan is still limited to a brief period in the future.
+         </p>
+         <p style="text-align:center;">
+           <br><br>
+           <img src="static/images/prediction_and_planning/15.png"  style="width: 100%; height: 100%"/>
+         </p>
+         </h3>
+      </div>
+
+      
   </div>
 </div>
 </div>
