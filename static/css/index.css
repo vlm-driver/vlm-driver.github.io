@@ -23,9 +23,6 @@ body {
   padding-bottom: 3rem;
 }
 
-.hero.is-small + .hero.is-small {
-  margin-top: 200px; /* 适当调整间距的大小，可以根据需要修改 */
-}
 
 .teaser {
   font-family: 'Google Sans', sans-serif;
