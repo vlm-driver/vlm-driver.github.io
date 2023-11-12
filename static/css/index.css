@@ -5,9 +5,6 @@ body {
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 #dialog-container {
     width: 1100px;
