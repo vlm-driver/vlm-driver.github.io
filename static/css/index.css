@@ -12,6 +12,7 @@ body {
     border: 1px solid #ccc;
     border-radius: 10px; /* 圆角框 */
     margin-bottom: 20px;
+    text-align: center; 
 }
 
 img {
