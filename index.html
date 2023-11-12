@@ -676,24 +676,34 @@ In this paper, we introduce <em><b>Dolphins</b></em>, a novel vision-language mo
 
 <script>
   function toggleHighlight(tag, highlightColor) {
-        // 获取对话框内容
-        const dialogContent = document.getElementById('dialog-container');
+            const clickedTag = event.target;
 
-        // 获取对应的类名
-        const className = tag.toLowerCase();
+            // 获取特定类型的内容
+            const contentElements = document.querySelectorAll(`.${tag}`);
 
-        // 查找对应的元素
-        const elementsToHighlight = dialogContent.querySelectorAll('.' + className);
+            // 检查是否已经高亮
+            const isHighlighted = clickedTag.classList.contains('highlight');
 
-        // 检查是否已经有高亮，如果有则移除，否则添加高亮
-        elementsToHighlight.forEach(element => {
-            if (element.style.backgroundColor === highlightColor) {
-                element.style.backgroundColor = '';
+            // 移除之前的高亮
+            const highlightedElements = document.querySelectorAll('.highlight');
+            highlightedElements.forEach(element => {
+                element.classList.remove('highlight');
+            });
+
+            // 如果当前标签不是已经高亮的状态，则添加高亮，否则移除高亮
+            if (!isHighlighted) {
+                clickedTag.classList.add('highlight');
+                // 为特定类型的内容添加高亮
+                contentElements.forEach(element => {
+                    element.style.backgroundColor = highlightColor;
+                });
             } else {
-                element.style.backgroundColor = highlightColor;
+                // 移除特定类型的内容的高亮
+                contentElements.forEach(element => {
+                    element.style.backgroundColor = '';
+                });
             }
-        });
-    }
+        }
 </script>
 <!-- End of Statcounter Code -->
 </body>
