@@ -25,16 +25,17 @@ img {
     font-size:15px
 }
 .bubble {
-    background-color: #E2F0D9;
     padding: 10px;
     border-radius: 10px; /* 圆角框 */
     margin-bottom: 8px;
     display: inline-block;
 }
 .bubble.left {
+    background-color: #D6DCE5;
     float: left;
 }
 .bubble.right {
+    background-color: #E2F0D9;
     float: right;
 }
 .highlight {
