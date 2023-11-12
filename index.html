@@ -716,18 +716,20 @@ In this paper, we introduce <em><b>Dolphins</b></em>, a novel vision-language mo
 <script>
   function highlightTag(tag) {
       // 移除之前的高亮
-      const highlightedElements = document.querySelectorAll('.highlight');
-      highlightedElements.forEach(element => {
-          element.classList.remove('highlight');
-      });
+      const clickedTag = event.target;
 
       // 获取对话框内容
       const dialogContent = document.getElementById('dialog-container');
 
-      // 根据tag高亮对应内容
-      const tagElements = dialogContent.querySelectorAll('.' + tag);
-      tagElements.forEach(element => {
-          element.classList.add('highlight');
+      // 获取对应的类名
+      const className = tag.toLowerCase();
+
+      // 查找对应的元素
+      const elementsToHighlight = dialogContent.querySelectorAll('.' + className);
+
+      // 切换高亮状态
+      elementsToHighlight.forEach(element => {
+          element.classList.toggle('highlight');
       });
   }
 </script>
