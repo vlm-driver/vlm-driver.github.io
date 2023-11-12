@@ -2,6 +2,54 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+#dialog-container {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* 圆角框 */
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* 圆角框 */
+    margin-bottom: 10px;
+}
+.bubble-container {
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+.bubble {
+    background-color: #e0e0e0;
+    padding: 8px;
+    border-radius: 10px; /* 圆角框 */
+    margin-bottom: 8px;
+    display: inline-block;
+}
+.bubble.left {
+    float: left;
+}
+.bubble.right {
+    float: right;
+}
+.highlight {
+    background-color: yellow;
+}
+.tag {
+    cursor: pointer;
+    color: blue;
+    margin-right: 5px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* 圆角框 */
+    display: inline-block;
+    margin-bottom: 5px;
+}
 
 .footer .icon-link {
     font-size: 25px;
