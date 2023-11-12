@@ -7,7 +7,7 @@ body {
     margin: 20px;
 }
 #dialog-container {
-    width: 300px;
+    width: 1000px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 10px; /* 圆角框 */
@@ -25,7 +25,7 @@ img {
     overflow: hidden;
 }
 .bubble {
-    background-color: #e0e0e0;
+    background-color: #E2F0D9;
     padding: 8px;
     border-radius: 10px; /* 圆角框 */
     margin-bottom: 8px;
