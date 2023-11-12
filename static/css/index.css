@@ -10,7 +10,9 @@ body {
     border-radius: 10px; /* 圆角框 */
     margin-bottom: 20px;
     border-width: 5px
-    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 img {
