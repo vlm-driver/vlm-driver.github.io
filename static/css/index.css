@@ -29,7 +29,7 @@ img {
 }
 .bubble {
     background-color: #E2F0D9;
-    padding: 5px;
+    padding: 10px;
     border-radius: 10px; /* 圆角框 */
     margin-bottom: 8px;
     display: inline-block;
