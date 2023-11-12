@@ -23,6 +23,7 @@ img {
 .bubble-container {
     margin-bottom: 8px;
     overflow: hidden;
+    font-size:10px
 }
 .bubble {
     background-color: #E2F0D9;
