@@ -203,19 +203,50 @@ In this paper, we introduce <em><b>Dolphins</b></em>, a novel vision-language mo
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
 
-        <div class="item">
-         <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
-           Perception (Scenario Understanding)
-           </h2>
-         <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
-         <p>
-             An example showcasing <em><b>Dolphins</b></em>’s capability in scenario understanding. The video features an ego car driving in a tunnel. <em><b>Dolphins</b></em> can identify the environment in which the ego car is situated and accurately determine the color of the front vehicle as well as infer the current time.
-         </p>
-         <p style="text-align:center;">
-           <br><br>
-           <img src="static/images/perception/1.png"  style="width: 100%; height: 100%"/>
-         </p>
-         </h3>
+      <div class="item">
+        <div id="dialog-container">
+              <img src="static/images/perception/1.png">
+              <div class="bubble-container">
+                  <div class="bubble left"><strong>小明:</strong> 今天的天气真好，阳光明媚。</div>
+              </div>
+              <div class="bubble-container">
+                  <div class="bubble right"><strong>小红:</strong> 是的，真的很适合出去玩啊。</div>
+              </div>
+              <div class="bubble-container">
+                  <div class="bubble left"><strong>小明:</strong> 我们想吃点什么呢？</div>
+              </div>
+              <div class="bubble-container">
+                  <div class="bubble right"><strong>小红:</strong> 随便吧，你想吃什么？</div>
+              </div>
+              <div class="bubble-container">
+                  <div class="bubble left"><strong>小明:</strong> 我想吃<span class="food highlight">寿司</span>，你呢？</div>
+              </div>
+              <div id="tags">
+                  <span class="tag" onclick="highlightTag('food')">食物</span>
+                  <span class="tag" onclick="highlightTag('weather')">天气</span>
+                  <span class="tag" onclick="highlightTag('outing')">外出</span>
+              </div>
+          </div>
+          
+          <script>
+              function highlightTag(tag) {
+                  // 移除之前的高亮
+                  const highlightedElements = document.querySelectorAll('.highlight');
+                  highlightedElements.forEach(element => {
+                      element.classList.remove('highlight');
+                  });
+          
+                  // 获取对话框内容
+                  const dialogContent = document.getElementById('dialog-container');
+          
+                  // 根据tag高亮对应内容
+                  const tagElements = dialogContent.querySelectorAll('.' + tag);
+                  tagElements.forEach(element => {
+                      element.classList.add('highlight');
+                  });
+              }
+          </script>
+         
       </div>
 
       <div class="item">
