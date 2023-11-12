@@ -233,25 +233,7 @@ In this paper, we introduce <em><b>Dolphins</b></em>, a novel vision-language mo
               </div>
           </div>
           
-          <script>
-              function highlightTag(tag) {
-                  // 移除之前的高亮
-                  const highlightedElements = document.querySelectorAll('.highlight');
-                  highlightedElements.forEach(element => {
-                      element.classList.remove('highlight');
-                  });
-          
-                  // 获取对话框内容
-                  const dialogContent = document.getElementById('dialog-container');
-          
-                  // 根据tag高亮对应内容
-                  const tagElements = dialogContent.querySelectorAll('.' + tag);
-                  tagElements.forEach(element => {
-                      element.classList.add('highlight');
-                  });
-              }
-          </script>
-         
+
       </div>
 
       <div class="item">
@@ -722,6 +704,24 @@ In this paper, we introduce <em><b>Dolphins</b></em>, a novel vision-language mo
   
 <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
 
-    <!-- End of Statcounter Code -->
-  </body>
-  </html>
+<script>
+  function highlightTag(tag) {
+      // 移除之前的高亮
+      const highlightedElements = document.querySelectorAll('.highlight');
+      highlightedElements.forEach(element => {
+          element.classList.remove('highlight');
+      });
+
+      // 获取对话框内容
+      const dialogContent = document.getElementById('dialog-container');
+
+      // 根据tag高亮对应内容
+      const tagElements = dialogContent.querySelectorAll('.' + tag);
+      tagElements.forEach(element => {
+          element.classList.add('highlight');
+      });
+  }
+</script>
+<!-- End of Statcounter Code -->
+</body>
+</html>
