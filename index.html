@@ -238,8 +238,8 @@ In this paper, we introduce <em><b>Dolphins</b></em>, a novel vision-language mo
                   <span class="tag" style="color: black; background-color: #FFD9C0;" onclick="toggleHighlight('ara', '#FFD9C0')">Attributed Road Agents/Traffic Elements</span>
                   <span class="tag" style="color: black; background-color: #8CC0DE;" onclick="toggleHighlight('odd', '#8CC0DE')">ODDs</span>
                   <span class="tag" style="color: black; background-color: #CCEEBC;" onclick="toggleHighlight('tc', '#CCEEBC')">Traffic Conditions</span>
-                  <span class="tag" style="color: black; background-color: #FAF0D7;" onclick="toggleHighlight('ab', '#FAF0D7')">Agent Behaviors</span>
-                  <span class="tag" style="color: black; background-color: #FFFAD6;" onclick="toggleHighlight('eb', '#FFFAD6')">Ego Behaviors</span>
+                  <span class="tag" style="color: black; background-color: #FFFAD6;" onclick="toggleHighlight('ab', '#FFFAD6')">Agent Behaviors</span>
+                  <span class="tag" style="color: black; background-color: #E5D4FF;" onclick="toggleHighlight('eb', '#E5D4FF')">Ego Behaviors</span>
               </div>
           </div>
       </div>
@@ -281,8 +281,8 @@ In this paper, we introduce <em><b>Dolphins</b></em>, a novel vision-language mo
                   <span class="tag" style="color: black; background-color: #FFD9C0;" onclick="toggleHighlight('ara', '#FFD9C0')">Attributed Road Agents/Traffic Elements</span>
                   <span class="tag" style="color: black; background-color: #8CC0DE;" onclick="toggleHighlight('odd', '#8CC0DE')">ODDs</span>
                   <span class="tag" style="color: black; background-color: #CCEEBC;" onclick="toggleHighlight('tc', '#CCEEBC')">Traffic Conditions</span>
-                  <span class="tag" style="color: black; background-color: #FAF0D7;" onclick="toggleHighlight('ab', '#FAF0D7')">Agent Behaviors</span>
-                  <span class="tag" style="color: black; background-color: #FFFAD6;" onclick="toggleHighlight('eb', '#FFFAD6')">Ego Behaviors</span>
+                  <span class="tag" style="color: black; background-color: #FFFAD6;" onclick="toggleHighlight('ab', '#FFFAD6')">Agent Behaviors</span>
+                  <span class="tag" style="color: black; background-color: #E5D4FF;" onclick="toggleHighlight('eb', '#E5D4FF')">Ego Behaviors</span>
               </div>
           </div>
       </div>
@@ -299,31 +299,27 @@ In this paper, we introduce <em><b>Dolphins</b></em>, a novel vision-language mo
                   <div class="bubble right"><strong>User:</strong> Describe this driving related information in the video.</div>
               </div>
               <div class="bubble-container">
-                  <div class="bubble left"><strong>Dolphins:</strong> The video shows a car driving down a <span class="odd">tunnel</span>.
-                    <span class="eb">The car is moving forward</span>, and <span class="odd">the road ahead is dark</span>. The surrounding environment is illuminated by car lights and headlights,
-                    creating a dimly lit atmosphere. The presence of other cars in the tunnel indicates that <span class="tc">it is a busy and potentially congested area.</span> </div>
+                  <div class="bubble left"><strong>Dolphins:</strong> The video captures <span class="tc">a busy city intersection</span> with <span class="ab">multiple cars stopped</span> at 
+                    <span class="ara">a red light.</span> 
+                    <span class="ara">A police officer</span> is directing traffic from the intersection, ensuring the smooth flow of vehicles and maintaining order. 
+                    The presence of <span class="ara">a police car</span> further reinforces the idea that law enforcement is actively managing traffic in the area. </div>
               </div>
 
               <div class="bubble-container">
-                  <div class="bubble right"><strong>User:</strong> What color is the car in front you?</div>
+                  <div class="bubble right"><strong>User:</strong> Describe this police car in detail.</div>
               </div>
               <div class="bubble-container">
-                  <div class="bubble left"><strong>Dolphins:</strong> <span class="ara">The car in the front of the car is black.</span></div>
-              </div>
-
-              <div class="bubble-container">
-                  <div class="bubble right"><strong>User:</strong> Please predict what time it is.</div>
-              </div>
-              <div class="bubble-container">
-                  <div class="bubble left"><strong>Dolphins:</strong> The time is around <span class="odd">night.</span></div>
+                  <div class="bubble left"><strong>Dolphins:</strong> The <span class="ara">police car</span> is in the intersection directing traffic. 
+                    <span class="ab">The car is stopped</span> in the middle of the intersection with its <span class="ara">emergency lights</span> on. 
+                    This indicates that the car is there to control the flow of traffic and ensure the safety of drivers and pedestrians.</div>
               </div>
 
               <div id="tags">
                   <span class="tag" style="color: black; background-color: #FFD9C0;" onclick="toggleHighlight('ara', '#FFD9C0')">Attributed Road Agents/Traffic Elements</span>
                   <span class="tag" style="color: black; background-color: #8CC0DE;" onclick="toggleHighlight('odd', '#8CC0DE')">ODDs</span>
                   <span class="tag" style="color: black; background-color: #CCEEBC;" onclick="toggleHighlight('tc', '#CCEEBC')">Traffic Conditions</span>
-                  <span class="tag" style="color: black; background-color: #FAF0D7;" onclick="toggleHighlight('ab', '#FAF0D7')">Agent Behaviors</span>
-                  <span class="tag" style="color: black; background-color: #FFFAD6;" onclick="toggleHighlight('eb', '#FFFAD6')">Ego Behaviors</span>
+                  <span class="tag" style="color: black; background-color: #FFFAD6;" onclick="toggleHighlight('ab', '#FFFAD6')">Agent Behaviors</span>
+                  <span class="tag" style="color: black; background-color: #E5D4FF;" onclick="toggleHighlight('eb', '#E5D4FF')">Ego Behaviors</span>
               </div>
           </div>
       </div>
@@ -341,31 +337,29 @@ In this paper, we introduce <em><b>Dolphins</b></em>, a novel vision-language mo
                   <div class="bubble right"><strong>User:</strong> Describe this driving related information in the video.</div>
               </div>
               <div class="bubble-container">
-                  <div class="bubble left"><strong>Dolphins:</strong> The video shows a car driving down a <span class="odd">tunnel</span>.
-                    <span class="eb">The car is moving forward</span>, and <span class="odd">the road ahead is dark</span>. The surrounding environment is illuminated by car lights and headlights,
-                    creating a dimly lit atmosphere. The presence of other cars in the tunnel indicates that <span class="tc">it is a busy and potentially congested area.</span> </div>
+                  <div class="bubble left"><strong>Dolphins:</strong> The video shows <span class="odd">a rainy day on a city street.</span> 
+                    The street is wet from the rain, creating <span class="odd">a slick surface</span> for the cars to drive on. 
+                    <span class="tc">There are several cars on the road,</span> <span class="ab">with some driving forward and others moving in the opposite direction.</span> 
+                    The traffic lights are visible at various points along the street, indicating the flow of traffic. 
+                    The overall atmosphere of the video is that of a rainy city street with cars moving cautiously in the wet conditions. </div>
               </div>
 
               <div class="bubble-container">
-                  <div class="bubble right"><strong>User:</strong> What color is the car in front you?</div>
+                  <div class="bubble right"><strong>User:</strong> What is the behavior of this ego car? Please describe the reason. </div>
               </div>
               <div class="bubble-container">
-                  <div class="bubble left"><strong>Dolphins:</strong> <span class="ara">The car in the front of the car is black.</span></div>
-              </div>
-
-              <div class="bubble-container">
-                  <div class="bubble right"><strong>User:</strong> Please predict what time it is.</div>
-              </div>
-              <div class="bubble-container">
-                  <div class="bubble left"><strong>Dolphins:</strong> The time is around <span class="odd">night.</span></div>
+                  <div class="bubble left"><strong>Dolphins:</strong> <span class="eb">The behavior of the ego car is braking and coming to a stop. </span>
+                    This action is prompted by the presence of <span class="ara">a red traffic light.</span> When the light turns red, 
+                    it serves as a signal for the driver to stop the car. In response to this signal, the driver applies the brakes, 
+                    gradually reducing the speed of the car until it comes to a complete stop, ensuring compliance with traffic regulations and maintaining safety. </div>
               </div>
 
               <div id="tags">
                   <span class="tag" style="color: black; background-color: #FFD9C0;" onclick="toggleHighlight('ara', '#FFD9C0')">Attributed Road Agents/Traffic Elements</span>
                   <span class="tag" style="color: black; background-color: #8CC0DE;" onclick="toggleHighlight('odd', '#8CC0DE')">ODDs</span>
                   <span class="tag" style="color: black; background-color: #CCEEBC;" onclick="toggleHighlight('tc', '#CCEEBC')">Traffic Conditions</span>
-                  <span class="tag" style="color: black; background-color: #FAF0D7;" onclick="toggleHighlight('ab', '#FAF0D7')">Agent Behaviors</span>
-                  <span class="tag" style="color: black; background-color: #FFFAD6;" onclick="toggleHighlight('eb', '#FFFAD6')">Ego Behaviors</span>
+                  <span class="tag" style="color: black; background-color: #FFFAD6;" onclick="toggleHighlight('ab', '#FFFAD6')">Agent Behaviors</span>
+                  <span class="tag" style="color: black; background-color: #E5D4FF;" onclick="toggleHighlight('eb', '#E5D4FF')">Ego Behaviors</span>
               </div>
           </div>
       </div>
@@ -382,31 +376,24 @@ In this paper, we introduce <em><b>Dolphins</b></em>, a novel vision-language mo
                   <div class="bubble right"><strong>User:</strong> Describe this driving related information in the video.</div>
               </div>
               <div class="bubble-container">
-                  <div class="bubble left"><strong>Dolphins:</strong> The video shows a car driving down a <span class="odd">tunnel</span>.
-                    <span class="eb">The car is moving forward</span>, and <span class="odd">the road ahead is dark</span>. The surrounding environment is illuminated by car lights and headlights,
-                    creating a dimly lit atmosphere. The presence of other cars in the tunnel indicates that <span class="tc">it is a busy and potentially congested area.</span> </div>
+                  <div class="bubble left"><strong>Dolphins:</strong> The video shows <span class="odd">a residential area with several houses and parked cars. </span>
+                    <span class="eb">The houses are of various colors, including yellow, green, and blue.</span> There is <span class="eb">a stop sign</span> visible in the video, 
+                    indicating a stop at the intersection. <span class="tc">The road is lined with parked cars on both sides, creating a visually busy scene.</span> </div>
               </div>
 
               <div class="bubble-container">
-                  <div class="bubble right"><strong>User:</strong> What color is the car in front you?</div>
+                  <div class="bubble right"><strong>User:</strong> Tell me about the behavior of the car being driven in the video. </div>
               </div>
               <div class="bubble-container">
-                  <div class="bubble left"><strong>Dolphins:</strong> <span class="ara">The car in the front of the car is black.</span></div>
-              </div>
-
-              <div class="bubble-container">
-                  <div class="bubble right"><strong>User:</strong> Please predict what time it is.</div>
-              </div>
-              <div class="bubble-container">
-                  <div class="bubble left"><strong>Dolphins:</strong> The time is around <span class="odd">night.</span></div>
+                  <div class="bubble left"><strong>Dolphins:</strong> <span class="eb">The car is turning right.</span></div>
               </div>
 
               <div id="tags">
                   <span class="tag" style="color: black; background-color: #FFD9C0;" onclick="toggleHighlight('ara', '#FFD9C0')">Attributed Road Agents/Traffic Elements</span>
                   <span class="tag" style="color: black; background-color: #8CC0DE;" onclick="toggleHighlight('odd', '#8CC0DE')">ODDs</span>
                   <span class="tag" style="color: black; background-color: #CCEEBC;" onclick="toggleHighlight('tc', '#CCEEBC')">Traffic Conditions</span>
-                  <span class="tag" style="color: black; background-color: #FAF0D7;" onclick="toggleHighlight('ab', '#FAF0D7')">Agent Behaviors</span>
-                  <span class="tag" style="color: black; background-color: #FFFAD6;" onclick="toggleHighlight('eb', '#FFFAD6')">Ego Behaviors</span>
+                  <span class="tag" style="color: black; background-color: #FFFAD6;" onclick="toggleHighlight('ab', '#FFFAD6')">Agent Behaviors</span>
+                  <span class="tag" style="color: black; background-color: #E5D4FF;" onclick="toggleHighlight('eb', '#E5D4FF')">Ego Behaviors</span>
               </div>
           </div>
       </div>
@@ -420,34 +407,32 @@ In this paper, we introduce <em><b>Dolphins</b></em>, a novel vision-language mo
         <div id="dialog-container">
               <img src="static/images/examples/6.png"  style="width: 100%; height: 100%"/>
               <div class="bubble-container">
-                  <div class="bubble right"><strong>User:</strong> Describe this driving related information in the video.</div>
+                  <div class="bubble right"><strong>User:</strong> Describe the video in detail.</div>
               </div>
               <div class="bubble-container">
-                  <div class="bubble left"><strong>Dolphins:</strong> The video shows a car driving down a <span class="odd">tunnel</span>.
-                    <span class="eb">The car is moving forward</span>, and <span class="odd">the road ahead is dark</span>. The surrounding environment is illuminated by car lights and headlights,
-                    creating a dimly lit atmosphere. The presence of other cars in the tunnel indicates that <span class="tc">it is a busy and potentially congested area.</span> </div>
+                  <div class="bubble left"><strong>Dolphins:</strong> The video captures <span class="odd">a busy city intersection<span class="ara"> with <span class="ara">a yellow taxi<span class="ara"> driving through it. 
+                    The intersection is bustling with activity, as there are several pedestrians crossing the street, some of them carrying handbags. 
+                    In addition to the <span class="ara">pedestrians</span>, there are multiple cars stopped at the intersection, waiting for their turn to proceed. 
+                    <span class="ab">The yellow taxi is making its way through the busy intersection,</span> navigating around the stopped cars and pedestrians. 
+                    <span class="ara">The traffic light is green,</span> indicating that it is safe for the taxi to continue its journey. 
+                    The overall atmosphere of the video suggests a typical day in a busy urban environment. </div>
               </div>
 
               <div class="bubble-container">
-                  <div class="bubble right"><strong>User:</strong> What color is the car in front you?</div>
+                  <div class="bubble right"><strong>User:</strong> Tell me about the behavior of the car being driven in the video.</div>
               </div>
               <div class="bubble-container">
-                  <div class="bubble left"><strong>Dolphins:</strong> <span class="ara">The car in the front of the car is black.</span></div>
+                  <div class="bubble left"><strong>Dolphins:</strong> <span class="eb">The car is driving through an intersection in the city.</span></div>
               </div>
 
-              <div class="bubble-container">
-                  <div class="bubble right"><strong>User:</strong> Please predict what time it is.</div>
-              </div>
-              <div class="bubble-container">
-                  <div class="bubble left"><strong>Dolphins:</strong> The time is around <span class="odd">night.</span></div>
-              </div>
+           
 
               <div id="tags">
                   <span class="tag" style="color: black; background-color: #FFD9C0;" onclick="toggleHighlight('ara', '#FFD9C0')">Attributed Road Agents/Traffic Elements</span>
                   <span class="tag" style="color: black; background-color: #8CC0DE;" onclick="toggleHighlight('odd', '#8CC0DE')">ODDs</span>
                   <span class="tag" style="color: black; background-color: #CCEEBC;" onclick="toggleHighlight('tc', '#CCEEBC')">Traffic Conditions</span>
-                  <span class="tag" style="color: black; background-color: #FAF0D7;" onclick="toggleHighlight('ab', '#FAF0D7')">Agent Behaviors</span>
-                  <span class="tag" style="color: black; background-color: #FFFAD6;" onclick="toggleHighlight('eb', '#FFFAD6')">Ego Behaviors</span>
+                  <span class="tag" style="color: black; background-color: #FFFAD6;" onclick="toggleHighlight('ab', '#FFFAD6')">Agent Behaviors</span>
+                  <span class="tag" style="color: black; background-color: #E5D4FF;" onclick="toggleHighlight('eb', '#E5D4FF')">Ego Behaviors</span>
               </div>
           </div>
       </div>
@@ -464,31 +449,31 @@ In this paper, we introduce <em><b>Dolphins</b></em>, a novel vision-language mo
                   <div class="bubble right"><strong>User:</strong> Describe this driving related information in the video.</div>
               </div>
               <div class="bubble-container">
-                  <div class="bubble left"><strong>Dolphins:</strong> The video shows a car driving down a <span class="odd">tunnel</span>.
-                    <span class="eb">The car is moving forward</span>, and <span class="odd">the road ahead is dark</span>. The surrounding environment is illuminated by car lights and headlights,
-                    creating a dimly lit atmosphere. The presence of other cars in the tunnel indicates that <span class="tc">it is a busy and potentially congested area.</span> </div>
+                  <div class="bubble left"><strong>Dolphins:</strong> The video shows a busy road at <span class="odd">night</span>, <span class="tc">with heavy traffic</span>. There are <span class="ara">several cars on the road</span>, 
+                    <span class="ab">all moving in the same direction</span>. The traffic is dense, creating a slow-moving flow. The cars are positioned closely to each other, 
+                    indicating a high level of congestion. <span class="odd">The road appears to be wet,</span> which may contribute to the reduced visibility and the need for cautious driving. </div>
               </div>
 
               <div class="bubble-container">
-                  <div class="bubble right"><strong>User:</strong> What color is the car in front you?</div>
+                  <div class="bubble right"><strong>User:</strong> If this video is the first view of your driving, describe the current behavior of your car. </div>
               </div>
               <div class="bubble-container">
-                  <div class="bubble left"><strong>Dolphins:</strong> <span class="ara">The car in the front of the car is black.</span></div>
+                  <div class="bubble left"><strong>Dolphins:</strong> <span class="eb">The car is driving forward slowly.</span></div>
               </div>
 
               <div class="bubble-container">
-                  <div class="bubble right"><strong>User:</strong> Please predict what time it is.</div>
+                  <div class="bubble right"><strong>User:</strong> Explain why you're travelling at a low speed. </div>
               </div>
               <div class="bubble-container">
-                  <div class="bubble left"><strong>Dolphins:</strong> The time is around <span class="odd">night.</span></div>
+                  <div class="bubble left"><strong>Dolphins:</strong> The car is traveling at low speed because <span class="ab">there is slow-moving traffic ahead.</span></div>
               </div>
 
               <div id="tags">
                   <span class="tag" style="color: black; background-color: #FFD9C0;" onclick="toggleHighlight('ara', '#FFD9C0')">Attributed Road Agents/Traffic Elements</span>
                   <span class="tag" style="color: black; background-color: #8CC0DE;" onclick="toggleHighlight('odd', '#8CC0DE')">ODDs</span>
                   <span class="tag" style="color: black; background-color: #CCEEBC;" onclick="toggleHighlight('tc', '#CCEEBC')">Traffic Conditions</span>
-                  <span class="tag" style="color: black; background-color: #FAF0D7;" onclick="toggleHighlight('ab', '#FAF0D7')">Agent Behaviors</span>
-                  <span class="tag" style="color: black; background-color: #FFFAD6;" onclick="toggleHighlight('eb', '#FFFAD6')">Ego Behaviors</span>
+                  <span class="tag" style="color: black; background-color: #FFFAD6;" onclick="toggleHighlight('ab', '#FFFAD6')">Agent Behaviors</span>
+                  <span class="tag" style="color: black; background-color: #E5D4FF;" onclick="toggleHighlight('eb', '#E5D4FF')">Ego Behaviors</span>
               </div>
           </div>
       </div>
